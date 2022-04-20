@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horosccope</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="headerContainer">
+            <h1 class="title" >
+                НОВЫЙ ГОРОСКОП НА 2021 ГОД!
+            </h1>
+            <p class="comment">
+                Узнайте, что Вас ждёт.
+            </p>
+            </div>    
+           </header> 
+           <main class = "main">
+                <div class="container1 container" style="display: flex;">
+                <div style="display: flex; align-items: center; flex: 1 1 auto; position: relative;">
+                    <img src="img\thumb_l_26123 1.png" alt="" class="imgThumb1">
+                    <img src="img\thumb_l_26128 2.jpg" alt="" class="imgThumb">
+                
+                </div>
+                
+                <h2 class="subtitle">
+                    Узнайте, как 2021 год изменит жизнь каждого из нас!
+                </h2>
+                <p class="valueSTTL">
+                 К сожалению, 2020 год принес нам немало неприятностей, 
+                 даже откровенных проблем и несчастий. 
+                 Не смотря на это, 3 знака зодиака очень скоро обретут долгожданное счастье!
+                  2021 год затронет своими потрясениями каждого из нас.
+                </p>
+                <div class = "input">
+                    <div class="question">
+                      <p>Укажите свой пол:</p>
+                    </div>
+                    <div class = "answer">
+                         <div class="inputBTN">
+                             <input type="radio" id="contactBTN1"
+                             name="contact" class="inputCont" value="Женщина" onchange="onChangeBTN()">
+                             <label for="contactBTN1">Женщина</label>
+                         </div>
+                         <div class="inputBTN">
+                             <input type="radio" id="contactBTN2"
+                              name="contact" class="inputCont" value="Мужчина" onchange="onChangeBTN()">
+                             <label for="contactBTN2">Мужчина</label> 
+                         </div>                             
+                    </div>
+                
+                </div>
+                </div>
+                <div class="container2 container" style="display: none;">
+                    <div class="progress">
+                        <span style="width: 20%;"></span>
+                    </div>
+                    <div class="question questionTwo">
+                        <p>В какое время суток Вы чувствуете себя наиболее комфортно?</p>
+                    </div>
+                    <div class = "answerTwo">
+                         <div class="inputBTNTwo">
+                             <input type="radio" id="contactBTN3_1"
+                             name="contact" class="inputCont" value="Утро" onchange="onChangeBTN()">
+                             <label for="contactBTN3_1">Утро</label>
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN3_2"
+                            name="contact" class="inputCont" value="Ночь" onchange="onChangeBTN()">
+                            <label for="contactBTN3_2">Ночь</label> 
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN3_3"
+                            name="contact" class="inputCont" value="Вечер" onchange="onChangeBTN()">
+                            <label for="contactBTN3_3">Вечер</label> 
+                         </div>  
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN3_4"
+                            name="contact" class="inputCont" value="День" onchange="onChangeBTN()">
+                            <label for="contactBTN3_4">День</label> 
+                         </div>                             
+                    </div>
+                </div>
+                <div class="container3 container" style="display: none;">
+                    <div class="progress">
+                        <span style="width: 40%;"></span>
+                    </div>
+                    <div class="question questionTwo">
+                        <p>Подскажите, мучает ли Вас бессонница последнее время?</p>
+                    </div>
+                    <div class = "answerTwo">
+                         <div class="inputBTNTwo">
+                             <input type="radio" id="contactBTN4_1"
+                             name="contact" class="inputCont" value="Да" onchange="onChangeBTN()">
+                             <label for="contactBTN4_1">Да</label>
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN4_2"
+                            name="contact" class="inputCont" value="Нет" onchange="onChangeBTN()">
+                            <label for="contactBTN4_2">Нет</label> 
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN4_3"
+                            name="contact" class="inputCont" value="Иногда" onchange="onChangeBTN()">
+                            <label for="contactBTN4_3">Иногда</label> 
+                         </div>  
+                                                   
+                    </div>
+                </div>
+                <div class="container4 container" style="display: none;">
+                    <div class="progress">
+                        <span style="width: 60%;"></span>
+                    </div>
+                    <div class="question questionTwo">
+                        <p>Чувствуете ли Вы в последнее время, что вам никак не удается осуществить ваши планы?</p>
+                    </div>
+                    <div class = "answerTwo">
+                         <div class="inputBTNTwo">
+                             <input type="radio" id="contactBTN5_1"
+                             name="contact" class="inputCont" value="Да" onchange="onChangeBTN()">
+                             <label for="contactBTN5_1">Да</label>
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN5_2"
+                            name="contact" class="inputCont" value="Нет" onchange="onChangeBTN()">
+                            <label for="contactBTN5_2">Нет</label> 
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN5_3"
+                            name="contact" class="inputCont" value="Иногда" onchange="onChangeBTN()">
+                            <label for="contactBTN5_3">Иногда</label> 
+                         </div>  
+                                                   
+                    </div>
+                </div>
+                <div class="container5 container" style="display: none;">
+                    <div class="progress">
+                        <span style="width: 80%;"></span>
+                    </div>
+                    <div class="question questionTwo">
+                        <p>Какой Вы видите свою жизнь через 5 лет?
+                        </p>
+                    </div>
+                    <div class = "answerTwo">
+                         <div class="inputBTNTwo">
+                             <input type="radio" id="contactBTN6_1"
+                             name="contact" class="inputCont" value="Брак, семья, дети, дом" onchange="onChangeBTN()">
+                             <label for="contactBTN6_1">Брак, семья, дети, дом</label>
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN6_2"
+                            name="contact" class="inputCont" value="Путешествия по Миру" onchange="onChangeBTN()">
+                            <label for="contactBTN6_2">Путешествия по Миру</label> 
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN6_3"
+                            name="contact" class="inputCont" value="Успешная карьера " onchange="onChangeBTN()">
+                            <label for="contactBTN6_3">Успешная карьера </label> 
+                         </div>
+                         <div class="inputBTNTwo">
+                            <input type="radio" id="contactBTN6_4"
+                            name="contact" class="inputCont" value="Всё вместе" onchange="onChangeBTN()">
+                            <label for="contactBTN6_4">Всё вместе</label> 
+                         </div>  
+                                                   
+                    </div>
+                </div>
+                <div class="container6 container" style="display: none;">
+                    <div class="progress">
+                        <span style="width: 100%;"></span>
+                    </div>
+                    <div class="question questionTwo">
+                        <p>Введите дату своего рождения:
+                        </p>
+                    </div>
+                    <div class = "answerLast">
+                         <div class="inputBTNLast">
+                            <select class="select" id="day">                             
+                            </select>
+                         </div>
+                         <div class="inputBTNLast">
+                            <select class="select" id="month">                                
+                            </select> 
+                         </div>
+                         <div class="inputBTNLast">
+                            <select class="select" id="year">
+                            </select>
+                         </div>
+                         <div class = "pictureBox">
+                             <div style="display: none;" class="pictureGoroscope" id="aries">
+                                 <img src= "img\1_aries.png">
+                                 <p class = "textImg">Овен</p>
+                             </div>
+                             <div style="display: none;" class="pictureGoroscope" id="taurus">
+                                <img src= "img\2_Taurus.png">
+                                <p class = "textImg">Телец</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="gemini">
+                                <img src= "img\3_Gemini.png">
+                                <p class = "textImg">Близнецы</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="rak">
+                                <img src= "img\Cancer_Rak.png">
+                                <p class = "textImg">Рак</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="leo">
+                                <img src= "img\5_Leo.png">
+                                <p class = "textImg">Лев</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="virgo">
+                                <img src= "img\6_Virgo.png">
+                                <p class = "textImg">Дева</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="libra">
+                                <img src= "img\7_Libra.png">
+                                <p class = "textImg">Весы</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="scorpio">
+                                <img src= "img\8_Scorpio.png">
+                                <p class = "textImg">Скорпион</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="sagittarius">
+                                <img src= "img\9_Sagittarius.png">
+                                <p class = "textImg">Стрелец</p>
+                            </div>
+                            <div style="display: none;" class="pictureGoroscope" id="capricorn">
+                                <img src= "img\10_Capricorn.png">
+                                <p class = "textImg">Козерог</p>
+                            </div>
+                             <div style="display: none;" class="pictureGoroscope" id="aquarius">
+                                <img src= "img\11_Aquarius.png">
+                                <p class = "textImg">Водолей</p>
+                            </div>
+                             <div style="display: none;" class="pictureGoroscope" id="pisces">
+                                <img src= "img\12_Pisces.png">
+                                <p class = "textImg">Рыбы</p>
+                            </div>
+                            <div class="chooseAnswer">
+                                Пожалуйста, выберите ответ
+                             </div>
+                            <div>
+                                <button class="nextBTNTwo">ДАЛЕЕ</button>
+                            </div>
+                           
+                         </div>
+                    </div>
+                </div>
+                <div class="container7 container"  style="display: none;">
+                    <p>Обработка Ваших данных:</p>
+                    <div class="progressbar">
+                        <span id="bar"></span>
+                    </div>
+                    <div class="generationData">
+                        <p >Анализ введенных данных . . . . . . . <span>Выполнено!</span></p>
+                        <p >Коррекция астрологического знака . . . . . . . <span>Выполнено!</span></p>
+                        <p >Расчет вариаций ответов . . . . . . . <span>Выполнено!</span></p>
+                        <p >Генерация предсказания . . . . . . . <span>Выполнено!</span></p>
+                        <p >Сохранение результата . . . . . . . <span>Выполнено!</span></p>
+                        <p >Поиск свободного оператора . . . . . . . <span>Выполнено!</span></p>
+                        <p >Начала озвучки и записи аудио-сообщения . . . . . . .<span></span></p>
+                        <p  id="redAudio" >Идёт запись!<span></span></p>
+                        <p  id="end">Готово!<span></span></p>
+                    </div>
+                </div>
+                <div class="container8 container"  style="display: none;">
+                    <p>Спасибо за Ваши ответы!</p>
+                    <p>Поздравляем! Прослушать свой персональный гороскоп возможно уже сейчас!</p>
+                    <p><span>2021 год вас ошарашит!</span><br>  
+                        Вас ждёт то, чего Вы никак не ожидали. 
+                        Первые известия Вы получите совсем скоро, возможно это 17-18 ноября!<br>
+                        <br>Что бы прослушать аудио-сообщение, необходимо нажать на кнопку ниже и позвонить 
+                        со своего мобильного телефона. Позвоните и Прослушайте очень серьезную информацию!
+                    </p>
+                    <div style="display: flex; align-items: center; flex: 1 1 auto; position: relative;">
+                        <img class = "imgVector" src="img\Vector.png" alt="">
+                        <button class="tellBTN">Звонить и слушать</button>
+                    </div>
+                </div>
+                <div class="container9 container"  style="display: none;">
+                    
+                </div>
+               <div>
+                   <button class="nextBTN">ДАЛЕЕ</button>
+               </div>
+                            
+            </main >  
+                   
+    </div>
+    <footer class="footer">
+        2020 © 
+        HOROSCOP PERSONAL
+   </footer>  
+    
+   
+</body>
+</html>
